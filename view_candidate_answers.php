@@ -130,6 +130,16 @@
               <i class="fa fa-book"></i>Question <?php echo $result['question_number'];?> 
             </div>
             <div class="card-body">
+
+              <?php
+             
+               
+            // echo $answer_falg;
+
+               
+
+              
+              ?>
                 <div class="card mb-4">
                     <div class="card-body">
                       <h2 class="card-title"><?php echo $result['question']; ?></h2>

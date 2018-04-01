@@ -153,7 +153,7 @@
                       </div>
                       <div class="col-md-4">
                         <label>Personality Marker</label>
-                        <textarea class="form-control" name="quality3" required placeholder="Enter quality"><?php echo $result['personality_marker_1']; ?></textarea>
+                        <textarea class="form-control" name="quality3" required placeholder="Enter quality"><?php echo $result['personality_marker_3']; ?></textarea>
                       </div>
                       <div class="col-md-4">
                         <label >Rank</label>
