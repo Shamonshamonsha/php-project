@@ -93,25 +93,25 @@
                           <input name="question_id_<?php echo $i;?>" type="hidden" value="<?php echo $result['question_id']; ?>">
                           <div class="form-check">
                              <label class="form-check-label">
-                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_1']; ?>" required>
+                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_1'].'@'.$result['mark1']; ?>" required>
                                <?php echo $result['option_1']; ?>
                              </label>
                           </div>
                           <div class="form-check">
                              <label class="form-check-label">
-                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_2']; ?>" required>
+                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_2'].'@'.$result['mark2']; ?>" required>
                                <?php echo $result['option_2']; ?>
                              </label>
                           </div>
                           <div class="form-check">
                              <label class="form-check-label">
-                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_3']; ?>" required>
+                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_3'].'@'.$result['mark3']; ?>" required>
                                <?php echo $result['option_3']; ?>
                              </label>
                           </div>
                           <div class="form-check">
                              <label class="form-check-label">
-                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_4']; ?>" required>
+                               <input class="form-check-input" type="radio" name="user_answer_<?php echo $i;?>" id="exampleRadios1" value="<?php echo $result['personality_marker_4'].'@'.$result['mark4']; ?>" required>
                                <?php echo $result['option_4']; ?>
                              </label>
                           </div>

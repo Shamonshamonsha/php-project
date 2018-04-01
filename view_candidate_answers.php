@@ -111,18 +111,23 @@
 		$get_aswers="SELECT * FROM `candidate_answers` where `answer_sheet_id`='$answersheet_id'";
 		$get_aswers_run=mysql_query($get_aswers);
 		$result_answers=mysql_fetch_assoc($get_aswers_run);
-		$answer_falg=1;
+    $answer_falg=1;
+    
+   
 		
 		$question_flag=0;//to check if any question present in database
 		$query_get_questions="select * from questions ORDER BY `question_number` ASC;";
-		$query_get_questions_run=mysql_query($query_get_questions);
+    $query_get_questions_run=mysql_query($query_get_questions);
+    
+    ?><h6>Total mark:<?php  echo $result_answers['total_mark'] ?></h6><?php
 		while($result=mysql_fetch_assoc($query_get_questions_run)){
-			$question_flag=1;
+      $question_flag=1;
+      
 		?>
           <!-- Example DataTables Card-->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fa fa-book"></i> Question <?php echo $result['question_number'];?> 
+              <i class="fa fa-book"></i>Question <?php echo $result['question_number'];?> 
             </div>
             <div class="card-body">
                 <div class="card mb-4">
